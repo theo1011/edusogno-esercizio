@@ -1,0 +1,182 @@
+/* General reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container for layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header styling */
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Add a navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #007bff;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #0056b3;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #003d80;
+}
+
+/* Event List Styling */
+.event-list {
+    margin: 20px 0;
+}
+
+.event {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event h3 {
+    color: #333;
+}
+
+.event p {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #777;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+/* General Button Style */
+.dashboard-button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+/* Hover Effect */
+.dashboard-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+/* Different Variants */
+.button-add {
+    background-color: #28a745; /* Green for Add */
+}
+
+.button-add:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.button-edit {
+    background-color: #ffc107; /* Yellow for Edit */
+}
+
+.button-edit:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+}
+
+.button-delete {
+    background-color: #dc3545; /* Red for Delete */
+}
+
+.button-delete:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
